@@ -30,6 +30,19 @@ with st.sidebar:
     """
     )
 
+st.markdown(
+    """
+    <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            section[data-testid="stSidebar"] {
+            width: 400px !important; # Set the width to your desired value
+            div.stLinkButton {text-align:center}
+            }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 st.title("Digital Marketing Onboarding")
 st.caption("🚀 Powered by Simbionte")
